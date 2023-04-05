@@ -1,0 +1,35 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Display_AR</title>
+  </head>
+  <body>
+    <div>
+    <center>
+        <h1>Display_AR</h1>
+    </center>
+    </div>
+    <center>
+    <div>
+        <table border="3px">
+            <tr>
+    
+                <th>name</th>
+                <th>athour</th>
+                <th>date</th>
+            </tr>
+                    {% for i in LOA %}
+                <tr>
+                    <td>{{ i.name }}</td>
+                    <td>{{ i.athour }}</td>
+                    <td>{{ i.date }}</td>
+                </tr>
+                {% endfor %}
+          </center>
+        </table>
+    </div>
+
+    
+  </body>
+</html>

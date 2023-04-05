@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Display_topic</title>
+  </head>
+  <body>
+    <div>
+    <center>
+        <h1>Display_Topics</h1>
+    </center>
+    </div>
+    <center>
+    <div>
+        <table border="3px">
+            <tr>
+                <th>Games Name</th>
+            </tr>
+                {%for i in LOT %}
+                <tr>
+                    <td>{{ i.topic }}</td>
+                </tr>
+                {% endfor %}
+            </tr>
+          </center>
+        </table>
+    </div>
+
+    
+  </body>
+</html>
